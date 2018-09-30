@@ -1,7 +1,4 @@
 sceneSetups:
-- path: Assets/Daniel-merge/scene.unity
-  isLoaded: 1
-  isActive: 1
 - path: Assets/LeapMotion/Core/Examples/Capsule Hands (Desktop).unity
   isLoaded: 1
-  isActive: 0
+  isActive: 1

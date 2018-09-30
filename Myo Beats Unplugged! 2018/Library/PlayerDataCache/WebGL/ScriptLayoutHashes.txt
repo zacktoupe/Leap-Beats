@@ -2,7 +2,6 @@ WebGL
 PlayerPath?
 C:/Users/noreg/Documents/Myo Beats Unplugged!/WebBuild
 SceneListBegin?
-Assets/Daniel-merge/scene.unity
 Assets/LeapMotion/Core/Examples/Capsule Hands (Desktop).unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
