@@ -1,0 +1,154 @@
+* {
+	background-image: url("trianglify.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+div img{
+	display:block;
+margin: 0 auto;
+}
+body {
+	font-family: sans-serif;
+	/*the font type for the content on the page*/
+	background-color: lightgreen;
+	/*color of the body is green */
+	width: 800px;
+	/*width for the page */
+	margin: 0px auto;
+	/*centers the page in the browser window */
+	/*sets the top, right,bottom, left padding */
+	/* creates extra space between its content and its border */
+}
+
+a { font-weight: bold; }
+a:link {color: black} 
+a:hover, a:focus {color: green;}
+a:visited {color: orange;}
+p {
+	padding: 20px; 
+}
+nav {
+	margin-bottom: 2em;
+}
+/*Styling for the 2-tier navigation menu*/
+#nav_menu ul {
+	list-style: none; /*no bullets*/
+	position: relative; /*the first submenu can be positioned within the main menu*/
+}
+
+#nav_menu ul li{
+	float: left; /*first level navigation bar - horizontal*/
+}
+#nav_menu ul ul{
+	display: none;	/*Don't display submenu until the hover of the li */
+	position: absolute;
+	top: 100% 		/*submenu is positioned at the bottom of the main menu*/
+	
+}
+
+#nav_menu ul ul li{
+	float: none; 		/*Display submenu vertically, but it's not shown yet*/	
+}
+
+#nav_menu ul li:hover > ul {
+	display: block; 	/*display the submenu on hover of the li, which shows now*/
+}
+#nav_menu > ul::after {  /*child selector >, select first ul, add content after first ul*/
+	content: "";		/*set to empty*/
+	display: block;		/*without this rule, submenu will float up into the navigation bar*/
+	clear: both;
+}
+
+/*Styles for the formatting of 2-tier navigation menu*/
+#nav_menu ul{
+	margin: 0;
+	padding: 0;
+	
+}
+#nav_menu ul li a {
+		text-align: center;
+	/*text in the block moves to center for each list */
+	display: block;
+	width: 129.85px;
+	/* to set the navigation bar on top across to fit */
+	height: 20.4px;
+	padding: 0.5em;
+	padding-left: 0.5em;
+	color: black;
+	/* color of the text in the nav bar set to red */
+	font-weight: lighter;
+	/* text is displayed bold */
+	padding-right: 3em;
+	padding-left: 2em;
+	font-size: 80%;
+	background: lightyellow;
+	border-radius: 10px;
+	border-left: 0.05px solid;
+	/*border left block */
+	border-right: 0.05px solid;
+	/*border right block */
+	border-bottom: 0.05px solid;
+	/*border bottom block */
+	border-top: 0.05px solid;
+	/*border op block */
+}
+
+div h2{
+	color: #ff3333;
+	text-shadow: 2px 2px #000000
+}
+
+div.div1
+{
+    float: right;
+    width: 100%;
+}
+div.div2 {
+    float: left;
+    width: 10%;
+    height: auto;
+}
+
+div.div3{
+    float: right;    
+}
+
+
+div.div4{
+    float: right;
+}
+
+ h2 {
+text-align: center;
+font-size: 50px;
+color: #ff3333;
+text-shadow: 2px 2px #000000;
+}
+h3{
+	text-align: center;
+font-size: 30px;
+color: #ff3333;
+text-shadow: 2px 2px #000000;
+	
+	
+}
+#nav_menu ul li.lastitem a {
+	width: 198px;		/*last item can be adjusted to fill the whole body width*/
+}
+
+#nav_menu ul li.current {
+	background-color: lightblue;
+}
+
+#nav_menu ul li a:hover, 
+#nav_menu ul li a:focus {
+	background-color: gray;
+}
+
+aside a {
+	text-decoration: none;
+}
+footer {
+	padding: 20px;
+	clear: both;
+}
